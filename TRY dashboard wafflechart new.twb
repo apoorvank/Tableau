@@ -1,0 +1,3447 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0712.0324                               -->
+<workbook original-version='18.1' source-build='2022.1.4 (20221.22.0712.0324)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Orders (Sample - Superstore)' inline='true' name='federated.1st8nm51342iy21fv9jd30ibfgj9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.0s02zyp1tneam81ac9vk815me5ns'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/apoor/Documents/My Tableau Repository/Datasources/2022.1/en_US-US/Sample - Superstore.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0s02zyp1tneam81ac9vk815me5ns' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0s02zyp1tneam81ac9vk815me5ns' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country/Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country/Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country/Region</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_3EACE958518644B1B96129FDFB8EC892]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_3EACE958518644B1B96129FDFB8EC892'>
+            <properties context=''>
+              <relation connection='excel-direct.0s02zyp1tneam81ac9vk815me5ns' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country/Region' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Waffle Chart Template)' inline='true' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Waffle Chart Template' name='excel-direct.0nvlrvi0ybanp01gg07g80z17qsb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/apoor/Desktop/Class Practice/Waffle Chart Template.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0nvlrvi0ybanp01gg07g80z17qsb' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0nvlrvi0ybanp01gg07g80z17qsb' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C101:no:A1:C101:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Column</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Column]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Column</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='BOX COLOUR' datatype='boolean' name='[Calculation_9071375580506640388]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='[federated.1st8nm51342iy21fv9jd30ibfgj9].[Calculation_9071375580506529795]&gt;= SUM([Percentage])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_F00741D151334FCB91037EBDBACDFD41]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_9071375580506640388]' derivation='User' name='[usr:Calculation_9071375580506640388:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/apoor/Desktop/Class Practice/Practice from Tableau Public sheets/EXTRA for tableau public extract/Sheet1 (Waffle Chart Template).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/15/2022 05:35:14 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (Waffle Chart Template)' increment-value='%null%' refresh-type='create' rows-inserted='100' timestamp-start='2022-11-15 17:35:14.104' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Row</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Row]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Column</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Column]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Column</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_F00741D151334FCB91037EBDBACDFD41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_9071375580506640388:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+        <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_F00741D151334FCB91037EBDBACDFD41'>
+            <properties context=''>
+              <relation connection='excel-direct.0nvlrvi0ybanp01gg07g80z17qsb' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row' ordinal='0' />
+                  <column datatype='integer' name='Column' ordinal='1' />
+                  <column datatype='real' name='Percentage' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1somjt71q6t5pi1df6fnx1vi6o3f'>
+      <datasources>
+        <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]'>
+        <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_0BB03F6C9D2E403AAF7C3E5CD5BF70BA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Central' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='AGG(BOX COLOUR)' />
+        <param name='target' value='Central' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated) 1' name='[Action2_C9564267E4B44A498146DB4A4FB73962]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='East' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='AGG(BOX COLOUR)' />
+        <param name='target' value='East' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated) 1 1' name='[Action3_FEE61CC1F29C402197646E5E94109ED3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='South' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='AGG(BOX COLOUR)' />
+        <param name='target' value='South' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated) 1 1 1' name='[Action4_C351F7CB8E3C4F6D8960D1AE4F9F4072]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='West' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='AGG(BOX COLOUR)' />
+        <param name='target' value='West' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Central'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' />
+            <datasource caption='Orders (Sample - Superstore)' name='federated.1st8nm51342iy21fv9jd30ibfgj9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1somjt71q6t5pi1df6fnx1vi6o3f'>
+            <column caption='BOX COLOUR' datatype='boolean' name='[Calculation_9071375580506640388]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[federated.1st8nm51342iy21fv9jd30ibfgj9].[Calculation_9071375580506529795]&gt;= SUM([Percentage])' />
+            </column>
+            <column datatype='integer' name='[Column]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Row]' role='measure' type='quantitative' />
+            <column-instance column='[Column]' derivation='Sum' name='[sum:Column:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Row]' derivation='Sum' name='[sum:Row:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_9071375580506640388]' derivation='User' name='[usr:Calculation_9071375580506640388:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+            <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9071375580506529795]' derivation='User' name='[usr:Calculation_9071375580506529795:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]'>
+            <groupfilter function='member' level='[none:Region:nk]' member='&quot;Central&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</column>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='31' />
+            <format attr='width' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='30' />
+            <format attr='text-format' field='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='false' />
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_0' value='none' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='body-type' id='annotation_4' value='none' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='body-type' id='annotation_5' value='none' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='body-type' id='annotation_6' value='none' />
+            <format attr='stroke-size' id='annotation_6' value='0' />
+            <format attr='line-visibility' id='annotation_6' value='off' />
+            <format attr='body-type' id='annotation_7' value='none' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='stroke-size' id='annotation_7' value='0' />
+            <format attr='line-visibility' id='annotation_7' value='off' />
+            <format attr='border-width' id='annotation_8' value='0' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+            <format attr='body-type' id='annotation_8' value='none' />
+            <format attr='stroke-size' id='annotation_8' value='0' />
+            <format attr='line-visibility' id='annotation_8' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' />
+              <lod column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</rows>
+        <cols>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#787878' fontname='Tableau Medium' fontsize='12'>Æ </run>
+              <run bold='true' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12467217240315903</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='47' y='-4' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.079216285911775486</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&lt;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12617670642520623</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-6' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19773595382113421</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='34' y='5' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.053165123013626144</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='58' y='0' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>-0.017528077613759047</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='42' y='4' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{83D893C8-12C3-4EE6-AD58-9A67A03B55EA}' />
+    </worksheet>
+    <worksheet name='East'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' />
+            <datasource caption='Orders (Sample - Superstore)' name='federated.1st8nm51342iy21fv9jd30ibfgj9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1somjt71q6t5pi1df6fnx1vi6o3f'>
+            <column caption='BOX COLOUR' datatype='boolean' name='[Calculation_9071375580506640388]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[federated.1st8nm51342iy21fv9jd30ibfgj9].[Calculation_9071375580506529795]&gt;= SUM([Percentage])' />
+            </column>
+            <column datatype='integer' name='[Column]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Row]' role='measure' type='quantitative' />
+            <column-instance column='[Column]' derivation='Sum' name='[sum:Column:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Row]' derivation='Sum' name='[sum:Row:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_9071375580506640388]' derivation='User' name='[usr:Calculation_9071375580506640388:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+            <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9071375580506529795]' derivation='User' name='[usr:Calculation_9071375580506529795:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]'>
+            <groupfilter function='member' level='[none:Region:nk]' member='&quot;East&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</column>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='31' />
+            <format attr='width' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='28' />
+            <format attr='text-format' field='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='false' />
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_0' value='none' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='body-type' id='annotation_4' value='none' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='body-type' id='annotation_5' value='none' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='body-type' id='annotation_6' value='none' />
+            <format attr='stroke-size' id='annotation_6' value='0' />
+            <format attr='line-visibility' id='annotation_6' value='off' />
+            <format attr='body-type' id='annotation_7' value='none' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='stroke-size' id='annotation_7' value='0' />
+            <format attr='line-visibility' id='annotation_7' value='off' />
+            <format attr='border-width' id='annotation_8' value='0' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+            <format attr='body-type' id='annotation_8' value='none' />
+            <format attr='stroke-size' id='annotation_8' value='0' />
+            <format attr='line-visibility' id='annotation_8' value='off' />
+            <format attr='body-type' id='annotation_9' value='none' />
+            <format attr='fill-color' id='annotation_9' value='#00000000' />
+            <format attr='stroke-size' id='annotation_9' value='0' />
+            <format attr='line-visibility' id='annotation_9' value='off' />
+            <format attr='body-type' id='annotation_10' value='none' />
+            <format attr='fill-color' id='annotation_10' value='#00000000' />
+            <format attr='stroke-size' id='annotation_10' value='0' />
+            <format attr='line-visibility' id='annotation_10' value='off' />
+            <format attr='fill-color' id='annotation_11' value='#00000000' />
+            <format attr='body-type' id='annotation_11' value='none' />
+            <format attr='stroke-size' id='annotation_11' value='0' />
+            <format attr='line-visibility' id='annotation_11' value='off' />
+            <format attr='body-type' id='annotation_12' value='none' />
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-size' id='annotation_12' value='0' />
+            <format attr='line-visibility' id='annotation_12' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' />
+              <lod column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9230387210845947' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</rows>
+        <cols>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#787878' fontname='Tableau Medium' fontsize='12'>Æ </run>
+              <run bold='true' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12467217240315903</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='47' y='-4' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.079216285911775486</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&lt;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12617670642520623</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-6' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19773595382113421</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='34' y='5' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.053165123013626144</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='58' y='0' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>-0.017528077613759047</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='42' y='4' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.014624553228853572</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-12' y='11' />
+          </annotation>
+          <annotation class='point' id='10' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19956873490978594</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='52' y='9' />
+          </annotation>
+          <annotation class='point' id='11' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.17911960608690808</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.13483398568882154</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='38' y='21' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{A2D0BCE0-12F1-410C-88A2-0AE449EA60F7}' />
+    </worksheet>
+    <worksheet name='South'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' />
+            <datasource caption='Orders (Sample - Superstore)' name='federated.1st8nm51342iy21fv9jd30ibfgj9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1somjt71q6t5pi1df6fnx1vi6o3f'>
+            <column caption='BOX COLOUR' datatype='boolean' name='[Calculation_9071375580506640388]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[federated.1st8nm51342iy21fv9jd30ibfgj9].[Calculation_9071375580506529795]&gt;= SUM([Percentage])' />
+            </column>
+            <column datatype='integer' name='[Column]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Row]' role='measure' type='quantitative' />
+            <column-instance column='[Column]' derivation='Sum' name='[sum:Column:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Row]' derivation='Sum' name='[sum:Row:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_9071375580506640388]' derivation='User' name='[usr:Calculation_9071375580506640388:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+            <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9071375580506529795]' derivation='User' name='[usr:Calculation_9071375580506529795:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]'>
+            <groupfilter function='member' level='[none:Region:nk]' member='&quot;South&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</column>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='31' />
+            <format attr='width' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='28' />
+            <format attr='text-format' field='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='false' />
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_0' value='none' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='body-type' id='annotation_4' value='none' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='body-type' id='annotation_5' value='none' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='body-type' id='annotation_6' value='none' />
+            <format attr='stroke-size' id='annotation_6' value='0' />
+            <format attr='line-visibility' id='annotation_6' value='off' />
+            <format attr='body-type' id='annotation_7' value='none' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='stroke-size' id='annotation_7' value='0' />
+            <format attr='line-visibility' id='annotation_7' value='off' />
+            <format attr='border-width' id='annotation_8' value='0' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+            <format attr='body-type' id='annotation_8' value='none' />
+            <format attr='stroke-size' id='annotation_8' value='0' />
+            <format attr='line-visibility' id='annotation_8' value='off' />
+            <format attr='body-type' id='annotation_9' value='none' />
+            <format attr='fill-color' id='annotation_9' value='#00000000' />
+            <format attr='stroke-size' id='annotation_9' value='0' />
+            <format attr='line-visibility' id='annotation_9' value='off' />
+            <format attr='body-type' id='annotation_10' value='none' />
+            <format attr='fill-color' id='annotation_10' value='#00000000' />
+            <format attr='stroke-size' id='annotation_10' value='0' />
+            <format attr='line-visibility' id='annotation_10' value='off' />
+            <format attr='fill-color' id='annotation_11' value='#00000000' />
+            <format attr='body-type' id='annotation_11' value='none' />
+            <format attr='stroke-size' id='annotation_11' value='0' />
+            <format attr='line-visibility' id='annotation_11' value='off' />
+            <format attr='body-type' id='annotation_12' value='none' />
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-size' id='annotation_12' value='0' />
+            <format attr='line-visibility' id='annotation_12' value='off' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='fill-color' id='annotation_13' value='#00000000' />
+            <format attr='stroke-size' id='annotation_13' value='0' />
+            <format attr='line-visibility' id='annotation_13' value='off' />
+            <format attr='body-type' id='annotation_14' value='none' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-size' id='annotation_14' value='0' />
+            <format attr='line-visibility' id='annotation_14' value='off' />
+            <format attr='body-type' id='annotation_15' value='none' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-size' id='annotation_15' value='0' />
+            <format attr='line-visibility' id='annotation_15' value='off' />
+            <format attr='body-type' id='annotation_16' value='none' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-size' id='annotation_16' value='0' />
+            <format attr='line-visibility' id='annotation_16' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' />
+              <lod column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8570718765258789' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</rows>
+        <cols>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#787878' fontname='Tableau Medium' fontsize='12'>Æ </run>
+              <run bold='true' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12467217240315903</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='47' y='-4' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.079216285911775486</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&lt;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12617670642520623</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-6' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19773595382113421</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='34' y='5' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.053165123013626144</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='58' y='0' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>-0.017528077613759047</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='42' y='4' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.014624553228853572</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-12' y='11' />
+          </annotation>
+          <annotation class='point' id='10' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19956873490978594</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='52' y='9' />
+          </annotation>
+          <annotation class='point' id='11' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.17911960608690808</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.13483398568882154</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='38' y='21' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.057726189835173164</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='30' y='9' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.15906234740260919</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.13437907511410024</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>3</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.11934341609004485</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='74' y='16' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{7406705C-CA98-4D60-BEE8-F0141D13E1C6}' />
+    </worksheet>
+    <worksheet name='West'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.1somjt71q6t5pi1df6fnx1vi6o3f' />
+            <datasource caption='Orders (Sample - Superstore)' name='federated.1st8nm51342iy21fv9jd30ibfgj9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1somjt71q6t5pi1df6fnx1vi6o3f'>
+            <column caption='BOX COLOUR' datatype='boolean' name='[Calculation_9071375580506640388]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[federated.1st8nm51342iy21fv9jd30ibfgj9].[Calculation_9071375580506529795]&gt;= SUM([Percentage])' />
+            </column>
+            <column datatype='integer' name='[Column]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Row]' role='measure' type='quantitative' />
+            <column-instance column='[Column]' derivation='Sum' name='[sum:Column:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Row]' derivation='Sum' name='[sum:Row:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_9071375580506640388]' derivation='User' name='[usr:Calculation_9071375580506640388:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+            <column caption='Profit Ratio' datatype='real' name='[Calculation_9071375580506529795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9071375580506529795]' derivation='User' name='[usr:Calculation_9071375580506529795:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]'>
+            <groupfilter function='member' level='[none:Region:nk]' member='&quot;West&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</column>
+            <column>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='31' />
+            <format attr='width' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='30' />
+            <format attr='text-format' field='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]' value='false' />
+            <format attr='display' field='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_0' value='none' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='body-type' id='annotation_4' value='none' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='body-type' id='annotation_5' value='none' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='body-type' id='annotation_6' value='none' />
+            <format attr='stroke-size' id='annotation_6' value='0' />
+            <format attr='line-visibility' id='annotation_6' value='off' />
+            <format attr='body-type' id='annotation_7' value='none' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='stroke-size' id='annotation_7' value='0' />
+            <format attr='line-visibility' id='annotation_7' value='off' />
+            <format attr='border-width' id='annotation_8' value='0' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+            <format attr='body-type' id='annotation_8' value='none' />
+            <format attr='stroke-size' id='annotation_8' value='0' />
+            <format attr='line-visibility' id='annotation_8' value='off' />
+            <format attr='body-type' id='annotation_9' value='none' />
+            <format attr='fill-color' id='annotation_9' value='#00000000' />
+            <format attr='stroke-size' id='annotation_9' value='0' />
+            <format attr='line-visibility' id='annotation_9' value='off' />
+            <format attr='body-type' id='annotation_10' value='none' />
+            <format attr='fill-color' id='annotation_10' value='#00000000' />
+            <format attr='stroke-size' id='annotation_10' value='0' />
+            <format attr='line-visibility' id='annotation_10' value='off' />
+            <format attr='fill-color' id='annotation_11' value='#00000000' />
+            <format attr='body-type' id='annotation_11' value='none' />
+            <format attr='stroke-size' id='annotation_11' value='0' />
+            <format attr='line-visibility' id='annotation_11' value='off' />
+            <format attr='body-type' id='annotation_12' value='none' />
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-size' id='annotation_12' value='0' />
+            <format attr='line-visibility' id='annotation_12' value='off' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='fill-color' id='annotation_13' value='#00000000' />
+            <format attr='stroke-size' id='annotation_13' value='0' />
+            <format attr='line-visibility' id='annotation_13' value='off' />
+            <format attr='body-type' id='annotation_14' value='none' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-size' id='annotation_14' value='0' />
+            <format attr='line-visibility' id='annotation_14' value='off' />
+            <format attr='body-type' id='annotation_15' value='none' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-size' id='annotation_15' value='0' />
+            <format attr='line-visibility' id='annotation_15' value='off' />
+            <format attr='body-type' id='annotation_16' value='none' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-size' id='annotation_16' value='0' />
+            <format attr='line-visibility' id='annotation_16' value='off' />
+            <format attr='body-type' id='annotation_17' value='none' />
+            <format attr='fill-color' id='annotation_17' value='#00000000' />
+            <format attr='stroke-size' id='annotation_17' value='0' />
+            <format attr='line-visibility' id='annotation_17' value='off' />
+            <format attr='body-type' id='annotation_18' value='none' />
+            <format attr='fill-color' id='annotation_18' value='#00000000' />
+            <format attr='stroke-size' id='annotation_18' value='0' />
+            <format attr='line-visibility' id='annotation_18' value='off' />
+            <format attr='body-type' id='annotation_19' value='none' />
+            <format attr='fill-color' id='annotation_19' value='#00000000' />
+            <format attr='stroke-size' id='annotation_19' value='0' />
+            <format attr='line-visibility' id='annotation_19' value='off' />
+            <format attr='body-type' id='annotation_20' value='none' />
+            <format attr='fill-color' id='annotation_20' value='#00000000' />
+            <format attr='stroke-size' id='annotation_20' value='0' />
+            <format attr='line-visibility' id='annotation_20' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' />
+              <lod column='[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8570718765258789' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</rows>
+        <cols>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#787878' fontname='Tableau Medium' fontsize='12'>Æ </run>
+              <run bold='true' fontname='Tableau Medium' fontsize='12'><![CDATA[<[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12467217240315903</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='47' y='-4' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.079216285911775486</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&lt;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='16'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.12617670642520623</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-6' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19773595382113421</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='34' y='5' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.053165123013626144</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='58' y='0' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>-0.017528077613759047</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='42' y='4' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.014624553228853572</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-12' y='11' />
+          </annotation>
+          <annotation class='point' id='10' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.19956873490978594</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='52' y='9' />
+          </annotation>
+          <annotation class='point' id='11' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.17911960608690808</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.13483398568882154</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='38' y='21' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.057726189835173164</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='30' y='9' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.15906234740260919</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.13437907511410024</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>3</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.11934341609004485</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='74' y='16' />
+          </annotation>
+          <annotation class='point' id='17' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.14944831420727209</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='43' y='9' />
+          </annotation>
+          <annotation class='point' id='18' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>false</value>
+                    <value>0.04554382388076151</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='23' y='14' />
+          </annotation>
+          <annotation class='point' id='19' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.2382117955620392</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='20' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='12'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Column:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[sum:Row:ok]</field>
+                      <field>[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]</field>
+                      <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[usr:Calculation_9071375580506529795:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>6</value>
+                    <value>false</value>
+                    <value>0.17581383193404443</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{182FE288-ECB0-4B75-B9A2-542CA5C45D3B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='500' maxwidth='1300' minheight='500' minwidth='1300' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Orders (Sample - Superstore)' name='federated.1st8nm51342iy21fv9jd30ibfgj9' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1st8nm51342iy21fv9jd30ibfgj9'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96400' id='9' param='horz' type-v2='layout-flow' w='98616' x='692' y='1800'>
+            <zone h='96400' id='7' type-v2='layout-basic' w='98616' x='692' y='1800'>
+              <zone h='79773' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98616' x='692' y='18427'>
+                <zone h='79800' id='6' name='Central' w='24693' x='692' y='18400'>
+                  <layout-cache fixed-size-h='331' fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='79800' id='12' name='East' w='24692' x='25385' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='79800' id='14' name='South' w='24615' x='50077' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='79800' id='16' name='West' w='24616' x='74692' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='16627' id='5' type-v2='text' w='70539' x='692' y='1800'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Tableau Medium' fontsize='18'>Which regions have the highest profit ratio?</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16627' id='13' mode='checkdropdown' name='East' param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' type-v2='filter' w='28077' x='71231' y='1800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='96800' id='19' param='vert' type-v2='layout-flow' w='98770' x='615' y='1600'>
+                <zone forceUpdate='true' h='16627' id='5' type-v2='text' w='70539' x='692' y='1800'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Tableau Medium' fontsize='18'>Which regions have the highest profit ratio?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79800' id='6' is-fixed='true' name='Central' w='24693' x='692' y='18400'>
+                  <layout-cache fixed-size-h='331' fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16627' id='13' mode='checkdropdown' name='East' param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' type-v2='filter' w='28077' x='71231' y='1800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79800' id='12' is-fixed='true' name='East' w='24692' x='25385' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79800' id='14' is-fixed='true' name='South' w='24615' x='50077' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79800' id='16' is-fixed='true' name='West' w='24616' x='74692' y='18400'>
+                  <layout-cache fixed-size-w='222' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{847F60ED-7E63-48A5-9D23-914846BE5EC7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Central' />
+        <viewpoint name='East' />
+        <viewpoint name='South' />
+        <viewpoint name='West' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4EFECDFB-3FC0-4020-BD46-6152CFF2E747}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Central'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</field>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA0954D5-7AB9-4B23-AF33-D53BC8712050}' />
+    </window>
+    <window class='worksheet' hidden='true' name='East'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</field>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E6CAFDA-B44C-4830-BC03-2A72DB06B959}' />
+    </window>
+    <window class='worksheet' hidden='true' name='South'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</field>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{355A74C5-A425-4646-BDD2-F966F325E135}' />
+    </window>
+    <window class='worksheet' hidden='true' name='West'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1somjt71q6t5pi1df6fnx1vi6o3f].[usr:Calculation_9071375580506640388:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Category:nk]</field>
+            <field>[federated.1st8nm51342iy21fv9jd30ibfgj9].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5FD051BC-B4A2-42CF-822B-C905C2AECB73}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2dd5hU5dnGf+ec6WVnG1tnK72LICLSBYJKwBL1s8USjSXWRMWSGIld8llS
+      iCXBGDVGk88W7IoVpPeyu+yy7LK7bGH77E4/8/2xSkQW5h2ioJz3d11cFzv77H2eM2fuOTNz
+      7nleJRaLxZBIDIp6pBuQSI4k0gASQ2P66g/XX389I0eOPFK9SCSHnX0MMHLkSC655BJ0XT9S
+      /UgkhxXT12/QdZ0rrriCCRMmHIl+JJLDyn4GAJgwYQIXX3zxYW5FIjn8yDfBEkMjDSAxNNIA
+      EkMjDSAxNNIAEkMjDSAxNNIAEkMjDSAxNNIAcWitr2bVqg10haOH8Nc61WVb2bilnMg33tmR
+      IRLqZuPaVVTtbjmCXcSoqdjGhs2lhA8ptRNk06pVVOxqMqABYp3cdOGZXHvPkz0/RrtZcMuV
+      zDn9QtZWNQOw8f3nmDPnR2xpCrPhvRe56qrbqPYF9pN6+qGbmDP3AnZ2HWhjYf7xh/u44+4n
+      8H9Lu/NVKpb9H3PmzOG59zZ9a9vwt+3iV9dfxQvvrvnWtvF1dq17hzPmnsfyisYvbony6p8X
+      cOtvfkfnIT2ztHLnVVfxl5c/7T0KcVSjuElNhrdWrKUrBqbONtZt3kRrp8rm7bs5tiCNzevX
+      sdvvIC9Vo+kgUlNPu4hBEwNkWA9b9wclc+A4br01G2+//CPdyjdKJNBFXV09gfA3fx413hkA
+      GDliOKHm7VQ2helo2kFdVw6nTBpCybYyIEpJaSlFg4fgUpUv/iLM+/9axLlnnML0U07j1U+3
+      ALDh/X8x79ZH6DRBTI/w+TsvctHZc5k0aQpX3r4AX7jnr0PdzTz96N2cPH0Kp19wFVtr2vbp
+      Z9m/fsfEiaewbNMGrrnwDB75xxJCvj38+eE7+cG0qcw45QwWvfoRET0GxPj8rec5/8wfMnnq
+      DG649U4uOus8yn0xIs3lzJs3j6UljRCLUb11Bb+44kImT5rEmRdczuLPNhED9mz9gIkTJ/Kb
+      R/7Ezy75HyZPOYl7n3iFKNBYuYGbr/wxUyZNZPoPZnP7I898sd19qStbw23X/oQpU6Zw031P
+      0R2J0bVnJ/fffgOzZkxl8pRpXHbdHexs7qZuw9tMmTiRf35WAUDlmjf5wbTpvLa8gkBHA48/
+      eAczpk7hBz88i7+9sZToV76kWLn8ZS68aQGRWAe3/+RsJk48nU0NHQBE/G08t/B+Zs+cxpxz
+      LmPDzj0A1JQs54bLz2fK5Mmce+l1rK/s/Wlsz64txjRAv8FDUMLdlFXUsKt0C9aivowd0pfS
+      shJi/nrKdnYwcMgQFOVLAwSI2b3cNv9espVGXnztbQAi4RD+7gAxYNf697ht/iPkjjudhQv/
+      wFkzxuy9cwOBDrxDp3DnzVfRVrmGd5Zu2KefaCSM39/Jnx95kFZbHkOLs3nrud/z9JubuOne
+      /+WGcyfx1IJ7WFnRTHvlSu645zHcg6bwu98/yjCPjy2V9cRigB7F7/cTjurowT3cecst7DYV
+      8egf/sCkYjP33j6PLfV+Yl/UtXTqXHrDbcwYmc17r/wfTUF49ZmFrKiBBX94nIfuvo2+GS7o
+      5Uuz7Z1+5lx0DefPGs0n775CeX0XkUiYzP6juXfB73jo1zewe9OHPPnC26QXH4PXGWHFylXE
+      YjG2rF5Bl+Jh5JACXlv0MM9/WMbtDz7KlaeN4U/3zWd9Tefe7eQMm8L86y9EU5xc/cv7efLJ
+      h+ib6uy5X/0+MgecwPzbrqWzdhP//mgNEV8D9/16Ph2eYTz62CP0tTVx7wO/ozO8/060tXUY
+      0wBZhYNJd0YpKS1jy+ZtDBw4hMIBg2gvLaF8ZyUN3RGGDemPsvcv3Mw4dSYjho8iO81OKBTc
+      T/PDd94i6BnIz688n2HDhnHS1Kk4zD2/S0otYsaMiRwzYig2i0owFO6lqwD5Y85k0eOPMnNs
+      IR9/uIy8/sNJ0iIkFwwkXWnjs+Wb2LJ6BR16Kpf99GJGDhtKUW6fXvexfssyNtcHOe/Syxg1
+      YgTnX3wx7nAjn3y+cW/N2KmzGD1yBMXePsT0KFEdklNSCLRU8/Iri6luCTH7lFmYNGU//cGj
+      J3DCmFEM7l+IrkcJRyK407wMLUjlvTde4fX3PiOmaNQ3NWFxpXPC6KFsW7OSzqjO8hWrKBw9
+      kYKkEB9/uJzCgSNxEiK9cBAptLB0+Za927G6UinOy0JBw1vUl8GD++MwawC4Ur3MmD6F0SOH
+      YbOYCIZCNOzczLadrQwfPpRQKMLgQQPYuW091U0d++1Dv+EnGPA9AJDUJ4f8PqmUl2yhvaGC
+      AXPOoU+2C6dSw8dLNxEyexhY5E1IMxgOotmsWNRDfU5xcuZZs7FqChAmGIhRtelj5t+1+oum
+      M4hFAuixnpdBsV5elnyVUDAEaJi/eLCoJhOaCpFwb+b7D6ddfisu7xt8vnwFf1pwF3/OPJZn
+      //pbUixa3D1Y8cZfuWnB3zlx5myKvcmUfPk3iolxJ57A35e9TMX2Taze0sTpv5qAQohgQKdi
+      zXvctX1ZT60nAz3c20cGMUTGN4RDQSLRCK8/+0fe+2L7fdweApHe3z8Y0gCKNYWhA3J4ed0S
+      qrsjzOibjzvdQobTyuLFb+JMLSQ/y52Q5nHHjeWpxU/z2sfrOG/GKHbX7KJPdlYiXaHsfc/h
+      ZvDQPLaXW3jskfvpl5NMU80OOpRkUgMuHJHneHLh4zRNG8Wny3r/xCd38Cj62IK88+Z7TB58
+      ASs+fJeWkJXhIwZBZO0Bu1i7cgXFo6cx64zzWPrSY9y4YDH1XVEhA+woKUVNLubmeb8gUrOR
+      pW+/vvd3w8aMwx1ZxAtP/40WaxYnjuoPJDF4qJfd9Wn88eF7KMx001hdQZd537OaxWpFUfxs
+      317NpAGZoB7YCX1yi+mTYmPQKRdy21Xn4NB0tpWUUpjh6bXekC+BQGXY0KG0N9YTMNsp8mai
+      WFPol5dETc1ucgYNIcWcmOLI6edxzblTefbBXzB50hSu+fVj+EKH+tVShQuuvpmBzjYuPWcO
+      EydN5qIrf87qsnpS+57IA/NvRGspZ/F7y/CkpgD7v0QxJffl17dfT+UnzzN96hQeeu4TTr/y
+      FiYPTD/olsvXf8yNV1zIpIkTuWPh60w64xz6JondGWOnTicpUMnpP5jJnY8+SzD6nweqtc9A
+      ThjShyVLPiFv0DEUZSYBChdfN48CUwM//tFsJk6aysU/u5n1O/Z905ozdDzTRhfzzP03MvXU
+      H1PdeuAPlZ0ZA7j5+p+w6d1nOPmkKUydPos7H1lEu7/3M4Dy1blAixYt4qKLLuLZZ5896r8R
+      5u9opqquCc1sp7C4ALMCe3ZXs6e9G3dqJrkZKQB0tjRQ2+ijsF8hNpNG7c7tBDU3xXlZtDXW
+      0dAaoHhgMWYgFovSULuL9q4gnrRMMtOSaKypxhcxU1iUixL2s2NnNe60bDJTk/b24mttpKah
+      nYJ+fbGb/vOcFA50saumlnAUPKl9yEhPRo3phKIxzCYNYlGevu8G/vROI2999CLJYR/lO2vJ
+      yC0k1W0DYrTvaaC+uR1HUhq5WWmoikLE30F5VR0Z3iJSXRZaGmpp7gxTUFyEmQh7Gupp6fBh
+      trnw5uZg+UpP0XCAqsqdONNyyExLwtfWRE1jO/kFRTgsCk27a2jtjpKXl0vz7l1ErR4KsntM
+      11y/i6a2LhyedPKy0/faNuTvZFfNbiIxheTUPmSkeb7yAcS+NbpqpaDQS3tDDe1BlcKCPEx6
+      kPLKKhwpmeSke4jFYnS0NNCwpx3FZCErOweXw/qVp4kwO0oqsKVmGdcA31vq1zPnmocY2Def
+      iK+JFWu2MeOim7jrytP3e9BI4mPI9wDfa9IHccd1l1BSXk04NpAzLvk5Y48ZJB/8h4g0wPcN
+      k43jJ83g+ElHupGjA4O+CZZIepAGkBgaaQCJoZEGkBgaaQCJoen1U6Bt27axaNGiw92LRHLY
+      2c8Amqbx4IMPHoleJJLDjnwJJDE00gASQyMNIDE00gASQyMNIDE00gASQyMNIDE0B45Dx2LU
+      V5WwZnMF6XkDOG7EANTDEDnf+vk7RHLHMiI/5dvfmARiOms//5Da5u69Nw09bhLFWb1/h/Zo
+      4wBnAJ3P3/knyyt8zPjBLHIdfurbQwkJd+1YxhOvrEi4oc6WRjr8iW1L8l8Q0/lk6TJOPOlU
+      Tj2151/P93XFefv5hWyr33905PeBXs8AwT2VrNgF1112HKoC3v49i2fH9Ajlm9dSUtVE32HH
+      Mrgom1BXI1vLW7HprZTXNDF09ETyUhU++uRzSis1XlPrKRo6hiJXiJqwm5RoA6t3dDJ7yhjK
+      Nq+ndGcdjpQsxh0/GqfA5AHJt4Oqqnx1okssGqZ001q2V9fjSvMybuwx2M0anXtqWLZiHbrZ
+      xbHHjYX2KtZsLmOnvpiylCQmTp1MqvM7MitSgF7PAHU7S8gqHLzfS57Nny5mW5udk2edRNnH
+      /8fGmk4Cvt28/vLbWDL6cfL0ibz24t+Jmj1MmTSOASNPYO7cuYzol0tHbSlL3n+bp/7+Nkke
+      D4T96M5MTp49m0HJfl5Y/Onh2F+JINFQN2pyLqfM/iEF9lb+9fZyIMSzf3uJYyfPZOoJI+nu
+      6iKzcAjHDu3P5BmzmTt75vfqwQ8HOAPo0QiKsr83lq3YwolnHUNtXQOD+nv5YPlGCie68PYb
+      St/cdIiGsJl0or2ObYlSXh/gvptvwG7WiOlh8NXz9hvriHa3UNP4/brjjiYCHXt4a/FrX0yy
+      szB28mSy3HYibdt4a+Nagp1N1HYmAyoOS4zy8h0MKi6gMNd+hDv/7+nVABm5RTQuqQSG7nN7
+      OBSgo72tZ9a9s5A5EwuAasFNaYw9YTz2LyaV7Vz7HivrUvifU2Zj6a6l/MXlh7wTkv8OW1I6
+      J8+eS7LtP7eVLn2d9b5szjp1NnpbFU/9ewNg4oLLrqC0pIQVH75Blz2PM2eOO2J9fxP0+hLI
+      lTuUvFgNn27YQVTXaWusobUrzLEj+9HUYWL4iBEU5qQTiR540QhHeg7djVWEozrhXsbS+X0+
+      nCkpmIiwZdMmfIGjZQmJo4Puzi7cKcmosRBbN22kKxCFsI9tFXX0HTqKyVPHUbO9HICMzDRq
+      6uqJRiPocUY2ftfQ7rrrrru+/GHdunWMGjUKRVHpP3QorbtKWbNuI81dUQry8ygaMJiuuhLW
+      rN9Mq1+nqKAAm1lF0RzkZqcBENV1vHl5mGzJpKrtfL5mE1ZPBslOCyZnKlmpLgBSc4poqVjH
+      pu3VZOUXkZqaSqE3E12P4k7LJtlpOSJ3iBHxtTRQur2CstJSSktLMXuyGDBkMA0la9haUUt2
+      QTFpaWnke7PobtnNqlWr2FnbwbSZ00hyWMnIzadm62q2VTXi9Xr3GaT1XWe/wViXXnrpkexH
+      IjmsfH+sKpF8C0gDSAyNNIDE0EgDSAyNNIDE0Ox3ISwWi1HXUEuTr7G3+v3ISsqhtbuFYCR+
+      GMphduKyumj0NQhpZ7qzaQ+0Eeh1yZx9sZsduG1JNHbWC2n3cWXSJNhHmjOdUCREZ3D/daa+
+      jkk1k+nOoquzM24tgM1uR9d1QsH91x37Oqqq4nC58HXE7wPAareRkZGJph04Y1XTsIs9nQdb
+      DLYHRVGwmez4w91xa20mO6FoED0Wf4EQh8VJd+iACy0fcq0o+xlAURQ6lHYeWvYbIYHHzniS
+      Vze8xKbd6+PWTiiezMxBpwpr/3buH1m85WXW1qyKW3t8wXhOG3G2sPavZ90vXHvjlFspbyrj
+      31tejlvr9eTxwA8fY/2yT4S0h48ei9/XyY7SbXFr7Q4nE2bMYt3ST+h16cavMXTU6IM++AG2
+      tW3m6RVPxNWymmwckzuaFVVL49aO8o6hvKlM6Aljcr+T+Lj8g7h1idaKIl8CSQyNNIDE0EgD
+      SAyNNIDE0EgDSAyNNIDE0EgDSAyNNIDE0EgDSAxNr1+I8Yf97O6oFRLISy5gT1eT0CVyl9VN
+      ks1DXXuNkLY3OZ+Wrma6w/EvfzstLpLtKdS27xLSzknKpU5wHzPdWQTDQdoCrXFrLZqFXE8e
+      ne1tQtp2hxNdjxIMxI+SqKqKK8lDR1v8PgBsDgcWy8GHDXQE2tnTFT8KoSoqdrODrpAvbq3D
+      7CQYCRCNHfgrs1/itiYJXTFOtFaUXr8Ub4ppeHSx4UgqKk7dgUWPv+a2VbclpK3FVJwxO2Y9
+      /rwgS8yKRgLaCdSaY2aUGEL1mtLTazgcFtK26jrRaFSo/stYQyQcFghC9GjHIxwNC+VrVEVF
+      VTShWk3R6A53E9Xjf8/baXIKHwdrzIYaf5cSotdHra+jnbXLxOb0TJgxi+1bN9HSFD88l+3N
+      J6+4r7D2+GkzKS/Zyp763XFrM3JyKR4wSFh7zITJwrUjx46jvaWFneVlcWud7iTGTTlJWHv4
+      6LF0JZgFWrPsM0SzQDn5hQetWVuz6ohmgU4bcCYpDY64dQA5+QXUVVcJ1Yoi3wNIDI00gMTQ
+      SANIDI00gMTQSANIDI00gMTQSANIDI00gMTQSANIDE2vWSBdjxIKiq3TZbVaCUfC6NH416g1
+      TUMzmYRGgABYrFYi35q2RXgfzRYLMV0n0suY96+jqgpmi1Uo25OotqIoWG02Av74Y2IAzGYz
+      mungEZVAOCCUtVJQMGtmQtH495lZsxDVI0JjUewmO0pUbPVFTdOIHmQk/6HQ670TDodp3RM/
+      IAXQJzuHzvZ2QgIH3O5w4HC5xbWzsvF1dBAUOOA2hwOXO0lYOy0jU7g2JT2dUDBEV6fAXCCz
+      mfTMLGHt5LQ0IuGw0KwfzWQiIztHWNuTmorD5DpoTTQYJtgqYABFAbudYHf80CN2nXAwiC6Q
+      RVKd4O8Sm/VjdzqFa0Xp1QDdnZ1sXht/Fg/0ZIF2bi9NKAskqj1+2kyqKrYnlAUS1R4zYbJw
+      baJZoLSMTGHtRLNAGdk5bF67GtEskMN5cAO0NDVSsjH+TCdN00jPzKKhLn6CNj0zi/bWFsKh
+      +GeLRPI9MgskkXzDSANIDI00gMTQSANIDI00gMTQSANIDI00gMTQSANIDI00gMTQ9JoF+spN
+      ku8YiqIkdHwU5eA5G6Mf616jEMGAn/paweFVBUU0Nzbg98fPiDjdbpI8yeyuERtelZtfSOue
+      Jrq7BQZjOV14UtOo2yV2qTwrN4/6WrE+MrJyCAb8tAsMpDJbLOTkFVBVsV1Iu09mFuFQiLbW
+      lri1JrMZb0GRsHZ6RiauJM9Ba3wd7TQLxFhURcHudNLliz8Yy+5wEgoGhIJrLncSPoGMVaK1
+      ovRqAH9XF9u3bBISyMzJpaaqUjgLZLFYhbX7ZGZTu6tKOAtkcziEtT0pqcK1DqczoSxQtjdf
+      WNtmsyeUBfIWFLF9y2ZEskAWiyWuAdpamoV6lVkgieQoRBpAYmikASSGRhpAYmikASSGRhpA
+      YmikASSGRhpAYmh6vRCmqGrcpXX21ioKZrNZqF4zm1AURVxbVTCbxLRNJjOKIt63msA+qmrP
+      yBWRerPFAiCuralompaYttUKAhEGVY2/so7otjWThknwOH9ZpxB/3IlJ8PgmWitKr1kgicQo
+      9D4WpcvHrsodQgLFAwbRUFcjlBFJSk4mOTWd6h3lQtpF/QfSVL9bKP/hTvKQlpHBznKxnEx+
+      UV+qKyuEanPzC/B3d9MiMI/HarVR0K8/ZYJRiGxvPqFQgObG+FESi8VC0YBBlG3eKLRGWFau
+      F09K6kFr2lqaheINqqridLvpbG+PW+tyuwn4/ULDvjwpKbS3ii36l0itKL2H4fx+qgUDV/nF
+      fWmoqxXOAjmcLmFtb0ERjfV1wlkgt8cjrJ2RnSNcm5KWRntLi1C9051Eft9+wtqe5BS6fJ1C
+      9XaHk6IBg6iqKEckC+ROSoprgM72NqFtyyyQRHIUIg0gMTTSABJDIw0gMTTxl3c/CmhobGLV
+      2rX73BazOvb5lDoWi9He0cGqNevQNI2xo4/F6exZwNnvD/DJZ0vZuH4dBXlehg4ehKqqtLa1
+      s3LNGgb060dhfh6KolBbV8urr76KS43F/Tqi5MhjCAO0tLby8WfLANBjMbaWlBIzW/nhSVP2
+      1lRWVfPL39yL2+0mGAry7Isv8fB9d2O1WJk2fTqBQJC0lGTKKio4+/TTOOu0Odz90G8ZfcxI
+      Xnrlf7nzlpvI8+byxF+e5qdXXo1iM8Rd+73HEC+BBg8cwIJ75rPgnvlcfP7/oKkq48eP36fm
+      g48+xmaz8egD9/Dg/F8TDod58933iRHj2muu5dV/vsiCe+YzafwJLF2+gqpdNXR3d3PGD2dT
+      kJfHhs2b2bh5C6mpacw97bQjtKeSRDGEAb4kGo3y6uK3yM/zMmnCxH1+p5lMBINBfF3dpCR7
+      8ObmUlZegd1m47xzz8GTnMyWbSWsXreBgf37YbFY0HUdXY8SDodRFJV3P/yIooJ8zj77bF57
+      461vfDUTyTdPr+dpzWSK+2XqL1FVFYfTSSgYv95mt6Npmri2pmJ3OITq7XYHahztrdtKWLlm
+      DfN+fiMul2uf2jNPm8vmklIu/dl1OBx2QsEQo44ZidvjIRAI8tgfF/L0039l5ozp/Ozyn2C3
+      2xkxYgSPLHycmKIS0aMMHzaMf732Oi+88A8uuejHDBjQn+NGjz5o3yazGYvVKrSPNrsdALfH
+      IzTOxGS2xK0xW8S2rWkaNodT7Fg4nEQjEcLhcNxam13s+CZaK8oB5wKJLG8DPQaIxWJCB0RR
+      FBRFOSLaoVCICy+8kMrKSpYsWUJSUhLRSIRINIrJpEEMWtvaqNq5kz3NzVx99dWcf/75zJs3
+      j8svv5zS0hJuvOFGzjnnnL3rbvm7uynbvp2qqiqWLPmAs350FlddfTXLli3jpz/9KZMmTeTK
+      K6/65vYRUBNYJ0tV1fhzgXQdXXA2kOhMIkVRIBYTimscUDMW451332Xp0qUAzJ8/n7KyMj5c
+      soSorlNdXc1Nv/gFfTIy9v5JXV0dt9xyCx0dHfztmWd4/IkncLvdNDQ0cO6557Ju3Tp27NhB
+      YWEhZ599Nk8++WTvZ4C25j2sXvqJQPs9SyRtXb82oSWSVn7yoZD2+GkzKdu6KaElkpZ/9EGv
+      v1++ajVvLF7Mr+bdxMqP3mfMhMn88dGHmf/AAu755W3YbDYWPrWInOwstpaWkuRyc+zg/jzz
+      xEJefPEfDBk0iKf/8hRP/+Up0lJTuezHF6CqKi2trfzmgd9yxy0/p6WumnAoyPPPP8/K5cuZ
+      dsJYlix+9aB9J7pE0oQZs1iy+DVEl0jKyS88aE1NVeV3comkWCzG7ppamnfXUrq9nCWLXyW3
+      oJD+3iyaW1r4/Ssv0zc3k37FxQDous7vHn+SPunprFu7hpee/SvPPvNXHph/J2/++zVa6utY
+      tXYdP7v8Jzz2yMNUlW2jrb3dGJ8C9ZzRYlx8wbmMHD5s7+25Odmcd9aZZGVlkpqSwhlzZlNT
+      V8eokcM5cdzxOB0O3C4XP7/xRoJ+P20tzQB4kpL2atTVN3DuWWeQnpqKoij8at7NVNU3ce2V
+      l1NYUHDY9/VoQVEU8vO8rN2wce9tsViMp555lpWr19K/bzH53ry9v6uo3ElDYxMnz5jOu0s+
+      JN/rJdnj4eZf3kU4HOa8H51JXX09z730T/qkp1FWXsG20jJjGEBRFMYff9x+t3tzcrjgnLP2
+      /jxt8sT9arKzMpk1Z+4BB2MNGzxon5/7Fhdz/qWX88G/X/kGOpd8ncsvupCzT5/Lbx78LSvX
+      rGXCCccD8Pqbb1NXX8/CPy+ivaOTjz77jM5OH4/cfzd/efZ53v/oE35y4flsr9jBhs1bGNi/
+      H/UNjcYwgOT7h67rvPTyq6xau46W1jZe+NfLZOXksnrVKsxmE4FAgDxvDo8ufIKUZA/XXnE5
+      uq5TWVXF/Q8/yvAhQ/j3W+/w+yf/zI7Knfz43HOw2+1EolHcLhdDBg3ktTfekgaQfDdRFIXx
+      48Yy5thjALCYLYw8djTF3hyiepT0tHSS3C7O/dEZmEwaFosZgOLCAu6+4zayszK59847aGza
+      Q5LbRZ/0dADyvbkMGTQQm9XKTdddIw0g+W6iKAr5Xu8+t9ntNgoL8ve5LTOjzz4/W61WCvJ7
+      3hskud0kud37/D49LW3v/1OSPca6ECaRfB1pAImhkQaQGBppAImh6TUKEQoGhSYgQM8KJx1t
+      rQSDwbi1docDh9MltCIJ9Kxw0tnRTjAQiFtrs9txut1C0xUAUtP7CO9jcmoa4VCILl9n3FqT
+      yURaRqbQFVPoWagjGgnj6xTR1kjPzKahtkYoZuBJScHucB60prvLR0dbW1wtRVGw2mwE/P64
+      tVabjXAoJBR5sTsc+Lvjry6UaK0oBwzDeZJThAQUVcXhcmOzO+LWaiYTmqYJa6uahsPpwmaz
+      C2hraJp434nso9lsRtM0TKb4H5opas9JVVjbYsFkMqFpIto9uZ6klBSRJARmgSFSFotVrFel
+      Jw5htdrilqqahm7XhYZ3iQ4cS7RWlF7v9Y7WlqMuC/R1xkyYzOrPPhaqHTl2XEJLJI2bchKf
+      vf+2kPahZIE+e+8dvqks0O6a6u9kFui/rRVFvgeQGBppAImhkQaQGBppAImhkQaQGBppAImh
+      kQaQGBppAImhkQaQGJpes0DhcBifwEog0HNZvrvLRyQUfwaMxWrFarMJrTLSo52Mv6tb6Iqi
+      2WrBZnfQKZBrgZ7ZOqJ9OJPcRMMRoRyMZtJwe5Jpa24W03a7iUYjBLrja6uaiiclldbmPUJR
+      CIfLhdV28OhCMOCn29cVV0tRwGSxEA4KHAuLhUgkTEyP36TFZiUUiJ8jS7RWlN4XyeM/uZN4
+      KHwxk0egXlEUEKz9Uj0R7UT6JoFaBfG+v5zDk1Afwtrqf7YhIC82nDeB+zeRY6GooMYPw4lq
+      JlorSq8G6GxvSygLVLppQ0JZoFWffiSkfShZIFHtbzsLJNrHoWSBVn36Md9UFgBmoUsAAAO8
+      SURBVKhxd63MAkkkRkUaQGJopAEkhkYaQGJopAEkhkYaQGJopAEkhkYaQGJopAEkhqbXLFA0
+      GiXoF5u/YnM4CQWD6NFI3FrNZMZkNiekHQ4FiUZEtE2YzRYCgtpWu0O4D4vNjh6NEgnHv7Kp
+      qBo2ux1/l09Q24au60QErpoqqord4aTb50PkSrDFasNkNh+0JhwOEw7Gn7uEoqBpJqKR+Jkv
+      zWQiGtUhFj8KoZnMQpqJ1orSaxQiGonQ2dEhJGC12fF3dxESGIxlsztwqKqwtsVmw9/dLTwY
+      S9NMwtomi0W4Ntlk+mIwVvwHtclswma3C2t7NI1IJEKX0GAsE3aHE19nu8jIHZKStfgGCIWE
+      elUVBYtRBmN1dXawcdVyIYEJM2axo3RbQlkgUe3x02ZSub00oSyQqPaYCZOFaw8lCySqfShZ
+      oA0rVyCaBbLHyQI1N9bLLJBEYlSkASSGRhpAYmikASSGRhpAYmikASSGRhpAYmikASSGRhpA
+      Ymh6zQLFYjGiAtkeAE0zoes6MYHch6KoqKr6ndEWrVVVDWIxdJE+UFA1LTFtYkKxAQUFzWQi
+      EokgciVYVTVU9eDPcbquo+tRgU57xqKIHoueh1X8Hntq42smWitKr1GIUDBA4+46IYHsvHxa
+      9zQJZUQcLjeupCQaBReQy/Lm0d7Sgr87/uAmu9NJUnIKDbU1QtoZ2TnC+5iWkUUoGKCzPf7Q
+      LbPZQmaul927qsW0+2QSDofoaGuNW2symcnOy2f3LrE4QGp6Bs6vrZT+dbp9nT2DtuKgKCo2
+      h0Mo5GdzOAgFgkLGcrrcQosPJlorSq8G6Pb5hPIh0JP7qN5RkVAWSFQ7NT2DXTt3CGeBrFab
+      sLYrySNcm2gWKCMnV1g70SxQdl4+JRs3IJoFimeA1uY9MgskkRgVaQCJoZEGkBgaaQCJoZEG
+      kBgaaQCJoZEGkBgaaQCJoel9hRhFQdM0IQGFnlqRelVTE9JGAU1Vheo1VUus74RqVRTRPr6o
+      EdZWFXFtU0+NyaQRExgL8eWKMgffvui2TajCx1lDM5nQo/GvBKuqmGaitaLslwW65JJL6BAc
+      6SH57uNyuQ76oPH5fEQFHqhHK72eAex2++HuQ/ItES8MZ7Vahc4mRyv7GUBRFCwWy5HoRXIE
+      MMcZnHW0I98ESwyNNIDE0EgDSAyNNIDE0EgDSAyNNIDE0EgDSAyNNIDE0EgDSAyNNIDE0EgD
+      SAzNPlmgDRs2sGjRoiPVi0Ry2NknDi2RGA35EkhiaKQBJIbm/wHWScxIHF9PxQAAAABJRU5E
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

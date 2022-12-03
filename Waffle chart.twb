@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0712.0324                               -->
+<workbook original-version='18.1' source-build='2022.1.4 (20221.22.0712.0324)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Dataource for waffle chart' inline='true' name='federated.19z72hx0trt49j0zrxjqu0a0v6pw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dataource for waffle chart' name='textscan.10l28kn0maxjjj10akctg0ufkyym'>
+            <connection class='textscan' directory='C:/Users/apoor/Desktop/Class Practice/DATA SOURCE' filename='Dataource for waffle chart.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.10l28kn0maxjjj10akctg0ufkyym' name='Dataource for waffle chart.csv' table='[Dataource for waffle chart#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.10l28kn0maxjjj10akctg0ufkyym' name='Dataource for waffle chart.csv' table='[Dataource for waffle chart#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='NA_Sales' ordinal='6' />
+            <column datatype='real' name='EU_Sales' ordinal='7' />
+            <column datatype='real' name='JP_Sales' ordinal='8' />
+            <column datatype='real' name='Other_Sales' ordinal='9' />
+            <column datatype='real' name='Global_Sales' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Platform]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Platform</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NA_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NA_Sales]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>NA_Sales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EU_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EU_Sales]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>EU_Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JP_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JP_Sales]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>JP_Sales</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_Sales]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Other_Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Global_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Global_Sales]</local-name>
+            <parent-name>[Dataource for waffle chart.csv]</parent-name>
+            <remote-alias>Global_Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='EU Sales Portion' datatype='real' name='[Calculation_8707146960602370048]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([EU_Sales])/SUM([Global_Sales])' />
+      </column>
+      <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+      <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+      <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
+      <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
+      <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Dataource for waffle chart.csv' datatype='table' name='[__tableau_internal_object_id__].[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/apoor/Desktop/Class Practice/Practice from Tableau Public sheets/EXTRA for tableau public extract/Dataource for waffle chart.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/15/2022 02:14:56 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Dataource for waffle chart' increment-value='%null%' refresh-type='create' rows-inserted='16598' timestamp-start='2022-11-15 14:14:55.397' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16598</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7054</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Platform</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Platform</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publisher</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Publisher]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publisher</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>440</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NA_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NA_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NA_Sales</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>349</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EU_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EU_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EU_Sales</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JP_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[JP_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JP_Sales</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other_Sales</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Global_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Global_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Global_Sales</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Dataource for waffle chart.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>487</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Dataource for waffle chart.csv' id='Dataource for waffle chart.csv_C98E9F1D4AC9416CA0E48EE89A9CD306'>
+            <properties context=''>
+              <relation connection='textscan.10l28kn0maxjjj10akctg0ufkyym' name='Dataource for waffle chart.csv' table='[Dataource for waffle chart#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Platform' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='string' name='Genre' ordinal='4' />
+                  <column datatype='string' name='Publisher' ordinal='5' />
+                  <column datatype='real' name='NA_Sales' ordinal='6' />
+                  <column datatype='real' name='EU_Sales' ordinal='7' />
+                  <column datatype='real' name='JP_Sales' ordinal='8' />
+                  <column datatype='real' name='Other_Sales' ordinal='9' />
+                  <column datatype='real' name='Global_Sales' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Waffle Chart Template)' inline='true' name='federated.02ik48i0wlood416fyf9x0qd1uhx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Waffle Chart Template' name='excel-direct.19m3e7y1nntiea111q6wj1y6n0q0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/apoor/Desktop/Class Practice/Waffle Chart Template.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.19m3e7y1nntiea111q6wj1y6n0q0' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.19m3e7y1nntiea111q6wj1y6n0q0' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row' ordinal='0' />
+            <column datatype='integer' name='Column' ordinal='1' />
+            <column datatype='real' name='Percentage' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C101:no:A1:C101:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Row</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_631F520B938F43139587D033A911812A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Column</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Column]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Column</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_631F520B938F43139587D033A911812A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_631F520B938F43139587D033A911812A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='EU Sales Colour' datatype='boolean' name='[Calculation_8707146960602587137]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[Calculation_8707146960602370048]&gt;= SUM([Percentage])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_631F520B938F43139587D033A911812A]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_8707146960602587137]' derivation='User' name='[usr:Calculation_8707146960602587137:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_8707146960602587137:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.19z72hx0trt49j0zrxjqu0a0v6pw'>
+        <column caption='EU Sales Portion' datatype='real' name='[Calculation_8707146960602370048]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='SUM([EU_Sales])/SUM([Global_Sales])' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_631F520B938F43139587D033A911812A'>
+            <properties context=''>
+              <relation connection='excel-direct.19m3e7y1nntiea111q6wj1y6n0q0' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row' ordinal='0' />
+                  <column datatype='integer' name='Column' ordinal='1' />
+                  <column datatype='real' name='Percentage' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Waffle Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Waffle Chart Template)' name='federated.02ik48i0wlood416fyf9x0qd1uhx' />
+            <datasource caption='Dataource for waffle chart' name='federated.19z72hx0trt49j0zrxjqu0a0v6pw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ik48i0wlood416fyf9x0qd1uhx'>
+            <column caption='EU Sales Colour' datatype='boolean' name='[Calculation_8707146960602587137]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[Calculation_8707146960602370048]&gt;= SUM([Percentage])' />
+            </column>
+            <column datatype='integer' name='[Column]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Row]' role='measure' type='quantitative' />
+            <column-instance column='[Column]' derivation='Sum' name='[sum:Column:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Row]' derivation='Sum' name='[sum:Row:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_8707146960602587137]' derivation='User' name='[usr:Calculation_8707146960602587137:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.19z72hx0trt49j0zrxjqu0a0v6pw'>
+            <column caption='EU Sales Portion' datatype='real' name='[Calculation_8707146960602370048]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([EU_Sales])/SUM([Global_Sales])' />
+            </column>
+            <column caption='EU Sales' datatype='real' name='[EU_Sales]' role='measure' type='quantitative' />
+            <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_8707146960602370048]' derivation='User' name='[usr:Calculation_8707146960602370048:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_1' value='none' />
+            <format attr='stroke-size' id='annotation_1' value='0' />
+            <format attr='line-visibility' id='annotation_1' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02ik48i0wlood416fyf9x0qd1uhx].[usr:Calculation_8707146960602587137:nk]' />
+              <lod column='[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='4.2105045318603516' />
+                <format attr='shape' value=':filled/square' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]</rows>
+        <cols>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Medium'>Æ </run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium'><![CDATA[<[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]</field>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]</field>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[usr:Calculation_8707146960602587137:nk]</field>
+                      <field>[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>9</value>
+                    <value>false</value>
+                    <value>0.27287106914010967</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='15'> &lt;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='15'>[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='15'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Column:qk]</field>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[sum:Row:qk]</field>
+                      <field>[federated.02ik48i0wlood416fyf9x0qd1uhx].[usr:Calculation_8707146960602587137:nk]</field>
+                      <field>[federated.19z72hx0trt49j0zrxjqu0a0v6pw].[usr:Calculation_8707146960602370048:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>7</value>
+                    <value>false</value>
+                    <value>0.27287106914007242</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='61' y='75' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{FE41C1AD-BE05-4BA7-98E5-4CA2438F2E79}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Waffle Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ik48i0wlood416fyf9x0qd1uhx].[usr:Calculation_8707146960602587137:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight field='[federated.02ik48i0wlood416fyf9x0qd1uhx].[usr:Calculation_8707146960602587137:nk]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0520FA04-49AD-49CD-80CF-3B9A9AAEDF1D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Waffle Chart' width='192'>
+      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
+      gNCa/wPmYLRyBYhuoQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
